@@ -1,4 +1,6 @@
 ### study-of-basic-gates
+**Date:15/12/2025**
+
 
 **AIM:** 
 
@@ -65,15 +67,29 @@ Y= A⊕B
 **PROGRAM**
 
 Program for logic gates and verify its truth table in quartus using Verilog programming
+```
+module boolean_function_4var (
+    input  wire A,
+    input  wire B,
+    input  wire C,
+    input  wire D,
+    output wire F
+);
 
- Developed by: RegisterNumber: 
+assign F = (~A & B) | (C & D) | (A & ~D);
+
+endmodule
+```
+ Developed by:Jayendhiran RegisterNumber: 25017257
  
 **Logic symbol & Truthtable**
+<img width="1520" height="828" alt="image" src="https://github.com/user-attachments/assets/e1d15abe-62d6-49ac-96c3-3a5fca8ded1a" />
 
 **RTL realization Output:** 
 
 **RTL**
+<img width="1012" height="261" alt="image" src="https://github.com/user-attachments/assets/d7004e10-2336-4e43-a8e8-bedcd706b423" />
 
 **Result:**
 
-
+Thus the given logic functions are implemented using and their operations are verified using Verilog programming.
